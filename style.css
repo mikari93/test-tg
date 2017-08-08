@@ -1,0 +1,169 @@
+body{
+	background:#e7ebf0;
+	font-family: Tahoma, sans-serif, Arial, Helvetica;
+	margin-top:0;
+	margin-bottom:23px;
+}
+a{
+	text-decoration:none;
+}
+.clearfix{
+	clear:both;
+}
+.container{
+	width:1010px;
+	background:#fff;
+	margin:0 auto;
+	border: 1px solid #dfe5ec;
+	position:relative;
+}
+.header{
+	width:1010px;
+	background:#5682a3;
+	font-size: 14px;
+	line-height: 16px;
+	margin:0 auto;
+}
+.header a{
+	color:#fff;
+}
+.header a:hover{
+	background:#497799;
+	color:#fff;
+}
+.left{
+	width:313px;
+}
+.right{
+	width:697px;
+}
+.logo{
+    float:left;
+    vertical-align: top;
+}
+.logo a{
+	display:block;
+	padding: 20px 25px;
+}
+.rest{
+	float:left;
+}
+.menu-icon, .search-icon{
+	float:right;
+}
+.menu-icon a, .search-icon a{
+	color:#fff;
+	display: block;
+    padding: 20px 25px;
+}
+.title{
+	overflow:hidden;
+}
+.title a{
+	display:block;
+	padding:20px 25px;
+	margin-left:
+}
+.title a span.lastseen{
+	font-size:12px;
+	color:#b9cfe3;
+}
+
+.contacts{
+	border-right:1px solid #dfe5ec;
+}
+.searchbox{
+	padding: 12px;
+}
+.searchbox input[type=search] {
+    -webkit-appearance: none;
+}
+.searchbox .searchinput{
+    font-size: 12px;
+    border:1px solid #f2f2f2;
+    border-radius:2px;
+    padding:10px 20px;
+    background:#f2f2f2;
+    width:100%;
+	outline-width:0;
+}
+.searchbox .searchinput:active, .searchbox .searchinput:focus{
+	background:#fff;
+}
+.contacts {
+	float:left;
+}
+.contacts ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.contact a{
+	display:block;
+    padding: 7px 16px;
+}
+.contact a:hover{
+    background: #f2f6fa;
+}
+.contact .time{
+	float:right;
+	color:#b3b3b3;
+	font-size:11px;
+}
+.contact .userpic{
+	float:left;
+	margin-right:15px;
+}
+.contact img{
+	width:48px;
+	height:48px;
+	border-radius:50%;
+}
+.contact .short{
+	font-size:13px;
+	overflow:hidden;
+}
+.contact .short .name{
+	font-weight:bold;
+	margin:3px 0;
+	color:#222;
+}
+.contact .short .message{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-top:5px;
+	color:#808080;
+}
+.messages{
+	float:right;
+	width:696px;
+}
+.messages .sp-wrapper{
+	position:absolute;
+	bottom:0;
+}
+.messages .message-sending-panel{
+	width: 554px;
+    padding-bottom: 21px;
+	margin: 0 auto;
+    padding: 10px 15px;
+	bottom:0;
+}
+.messages .message-sending-panel .sender-photo{
+	float:left;
+}
+.messages .message-sending-panel .receiver-photo{
+	float:right;
+}
+
+.messages .message-sending-panel .sender-photo img, .messages .message-sending-panel .receiver-photo img{
+	border-radius:50%;
+	width:52px;
+	height:52px;
+}
+.messages .message-sending-panel .message-form{
+	width: 382px;
+    left: 70px;
+    right: 72px;
+}
