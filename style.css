@@ -209,7 +209,7 @@ a {
   display: inline-block;
 }
 .messages .history .message-wrapper .message .short .name:hover,
-.messages .history .message-wrapper .message .short .time:hover {
+.messages .history .message-wrapper .message .time:hover {
   text-decoration: underline;
 }
 .messages .history .message-wrapper .message .short .text {
