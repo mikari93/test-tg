@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Telegram Web</title>
-    <link rel="stylesheet"  type="text/css" href="style.css">
+    <link rel="stylesheet"  type="text/css" href="style-responsive.css">
 </head>
 <body>
 <div class="header">
@@ -11,6 +11,9 @@
         <a href="">Telegram</a>
     </div>
     <div class="rest right">
+        <div class="contact-icon">
+            <a href=""><img src="smileyface.jpg"></a>
+        </div>
         <div class="menu-icon">
             <a href="">:</a>
         </div>
@@ -18,7 +21,7 @@
             <a href="">/</a>
         </div>
         <div class="title">
-            <a href=""><b>Человек</b> <span class="lastseen">last seen 2 hours ago</span></a>
+            <a class="back" href="">&lt;</a></a><a href=""><b>Человек</b> <span class="lastseen">last seen 2 hours ago</span></a>
         </div>
     </div>
     <div class="clearfix"></div>
@@ -363,6 +366,15 @@
             </ul>
         </div>
 
+        <div class="message-sending-panel-mob">
+            <form>
+                <div class="attach"><a href="">@</a></div>
+                <button type="submit" class="send">&gt;</button>
+                <div class="ta-wrapper">
+                    <input type="text" placeholder="Write a message..."></input>
+                </div>
+            </form>
+        </div>
         <div class="right sp-wrapper">
             <div class="message-sending-panel">
                 <div class="sender-photo">
