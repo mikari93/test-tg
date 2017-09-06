@@ -1,0 +1,496 @@
+html {
+  height: 100%;
+}
+
+@media screen and (min-width:320px) {
+    body {
+        background: #e7ebf0;
+        font-family: Tahoma, sans-serif, Arial, Helvetica;
+        margin: 0;
+        height: 100%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .clearfix {
+        clear: both;
+    }
+
+    .header {
+        width: 100%;
+        background: #5682a3;
+        font-size: 14px;
+        line-height: 16px;
+        margin: 0 auto;
+    }
+
+    .header a {
+        color: #fff;
+    }
+
+    .header a:hover {
+        background: #497799;
+        color: #fff;
+    }
+    .logo {
+        display:none;
+    }
+
+
+    .menu-icon,
+    .search-icon,
+    .contact-icon{
+        float: right;
+    }
+
+    .menu-icon a,
+    .search-icon a {
+        color: #fff;
+        display: block;
+        padding: 20px 25px;
+    }
+
+    .contact-icon a{
+        display:block;
+        padding:8px;
+    }
+
+    .contact-icon a img{
+        width:36px;
+        border-radius:50%;
+    }
+
+    .title {
+        overflow: hidden;
+    }
+
+    .title a {
+        display: block;
+        padding: 20px 25px;
+    }
+    .title a.back {
+        float:left;
+        padding: 20px 10px;
+    }
+
+    .title a span.lastseen {
+        font-size: 12px;
+        color: #b9cfe3;
+    }
+
+    .container {
+        width: 100%;
+        background: #fff;
+        height: calc(100% - 56px);
+    }
+
+    .contacts{
+        display:none;
+    }
+
+    .messages {
+        float: right;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .messages .history {
+        position: absolute;
+        bottom: 54px;
+        top: 0;
+        overflow-y: scroll;
+    }
+
+    .messages .history ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .messages .history::-webkit-scrollbar-track {
+        background-color: #f5f5f5;
+        margin-right: 10px;
+        border-radius: 2px;
+    }
+
+    .messages .history::-webkit-scrollbar {
+        width: 9px;
+    }
+
+    .messages .history::-webkit-scrollbar-thumb {
+        background: rgba(137, 160, 179, 0.5);
+    }
+
+    .messages .history .message-wrapper {
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .messages .history .message-wrapper .message {
+        padding: 0 15px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .messages .history .message-wrapper .message .userpic{
+        display:none;
+    }
+
+    .messages .history .message-wrapper .message img {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+    }
+
+    .messages .history .message-wrapper .message .short {
+        font-size: 13px;
+        overflow: hidden;
+    }
+
+    .messages .history .message-wrapper .message .short .name {
+        font-weight: bold;
+        margin: 3px 0;
+        color: #3a6d99;
+        display: inline-block;
+    }
+
+    .messages .history .message-wrapper .message .short .name:hover,
+    .messages .history .message-wrapper .message .time:hover {
+        text-decoration: underline;
+    }
+
+    .messages .history .message-wrapper .message .short .text {
+        margin-top: 5px;
+        color: #000;
+        line-height: 150%;
+    }
+
+    .messages .history .message-wrapper .message .time {
+        float: right;
+        color: #b3b3b3;
+        font-size: 11px;
+    }
+
+    .messages .history .message-wrapper .message .userpic {
+        float: left;
+        margin-right: 15px;
+    }
+    .messages .message-sending-panel-mob{
+        position:absolute;
+        bottom:0;
+        left:0;
+        right:0;
+    }
+    .messages .message-sending-panel-mob .attach{
+        float: left;
+        margin: 15px;
+        color: #b5b5b5;
+    }
+    .messages .message-sending-panel-mob .send{
+        float: right;
+        color: #499dd9;
+        border: 0;
+        background: none;
+        font-weight: bold;
+        margin: 15px;
+        cursor: pointer;
+    }
+    .messages .message-sending-panel-mob .ta-wrapper{
+        overflow:hidden;
+        padding:5px;
+    }
+    .messages .message-sending-panel-mob .ta-wrapper input{
+        width:100%;
+        -webkit-appearance: none;
+        font-size: 12px;
+        border: 1px solid #f2f2f2;
+        border-radius: 2px;
+        padding: 10px 20px;
+        background: #f2f2f2;
+        outline-width: 0;
+    }
+    .messages .sp-wrapper{
+        display:none;
+    }
+
+}
+
+@media screen and (min-width:641px){
+    body{
+        height: calc(100% - 23px);
+    }
+
+    .left {
+        width: 313px;
+    }
+
+    .right {
+        width: 696px;
+    }
+
+    .header{
+        width: 1010px;
+    }
+    .logo{
+        display:block;
+        float: left;
+        vertical-align: top;
+    }
+    .logo a {
+        display: block;
+        padding: 20px 25px;
+    }
+    .rest {
+        float: left;
+    }
+    .contact-icon{
+        display:none;
+    }
+    .title a.back{
+        display:none;
+    }
+    .container {
+        width: 1010px;
+        margin:0 auto;
+        border: 1px solid #dfe5ec;
+
+    }
+    .contacts {
+        display:block;
+        border-right: 1px solid #dfe5ec;
+        height: 100%;
+        position: relative;
+        float: left;
+    }
+
+    .contacts .list {
+        height: calc(100% - 60px);
+        overflow-y: scroll;
+    }
+
+    .contacts .list::-webkit-scrollbar-track {
+        background-color: #f5f5f5;
+        margin-right: 10px;
+        border-radius: 2px;
+    }
+
+    .contacts .list::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    .contacts .list::-webkit-scrollbar-thumb {
+        background: rgba(137, 160, 179, 0.5);
+    }
+
+    .contacts .searchbox {
+        padding: 12px;
+    }
+
+    .contacts .searchbox input[type=search] {
+        -webkit-appearance: none;
+    }
+
+    .contacts .searchbox .searchinput {
+        font-size: 12px;
+        border: 1px solid #f2f2f2;
+        border-radius: 2px;
+        padding: 10px 20px;
+        background: #f2f2f2;
+        width: 100%;
+        outline-width: 0;
+    }
+
+    .contacts .searchbox .searchinput:active,
+    .contacts .searchbox .searchinput:focus {
+        background: #fff;
+    }
+
+    .contacts ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contacts ul a {
+        display: block;
+        padding: 7px 16px;
+    }
+
+    .contacts ul a:hover {
+        background: #f2f6fa;
+    }
+
+    .contacts ul a .time {
+        float: right;
+        color: #b3b3b3;
+        font-size: 11px;
+    }
+
+    .contacts ul a .userpic {
+        float: left;
+        margin-right: 15px;
+    }
+
+    .contacts ul a .userpic img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+    }
+
+    .contacts ul a .short {
+        font-size: 13px;
+        overflow: hidden;
+    }
+
+    .contacts ul a .short .name {
+        font-weight: bold;
+        margin: 3px 0;
+        color: #222;
+    }
+
+    .contacts ul a .short .message {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 5px;
+        color: #808080;
+    }
+    .messages .history{
+        bottom: 179px;
+    }
+    .messages .history .message-wrapper .message {
+        width: 530px;
+    }
+    .messages .history .message-wrapper .message .userpic{
+        display:block;
+    }
+    .messages .message-sending-panel-mob{
+        display:none;
+    }
+    .messages .sp-wrapper {
+        display:block;
+        position: absolute;
+        bottom: 0;
+        left:0;
+        right:0;
+    }
+
+    .messages .sp-wrapper .message-sending-panel {
+        width: 554px;
+        margin: 0 auto;
+        padding: 10px 15px;
+        padding-bottom: 21px;
+        bottom: 0;
+        background:white;
+    }
+
+    .messages .sp-wrapper .message-sending-panel .sender-photo {
+        float: left;
+    }
+
+    .messages .sp-wrapper .message-sending-panel .receiver-photo {
+        float: right;
+    }
+
+    .messages .sp-wrapper .message-sending-panel .receiver-photo img,
+    .messages .sp-wrapper .message-sending-panel .sender-photo img {
+        border-radius: 50%;
+        width: 52px;
+        height: 52px;
+    }
+
+    .messages .sp-wrapper .message-sending-panel .message-form {
+        width: 382px;
+        left: 70px;
+        right: 72px;
+        margin: 0 auto;
+    }
+
+    .messages .sp-wrapper .message-sending-panel .message-form textarea {
+        border: 0;
+        outline: none;
+        height: 52px;
+        resize: none;
+        width: 100%;
+        border-bottom: 1px solid #e8e8e8;
+        font-family: Tahoma, sans-serif, Arial, Helvetica;
+    }
+
+    .messages .sp-wrapper .message-sending-panel .message-form textarea:focus {
+        border-bottom: 2px solid #77b7e4;
+        height: 51px;
+    }
+
+    .messages .sp-wrapper .message-sending-panel .message-form .attach,
+    .messages .sp-wrapper .message-sending-panel .message-form .media,
+    .messages .sp-wrapper .message-sending-panel .message-form .smiles {
+        float: left;
+        margin: 15px;
+    }
+
+    .messages .sp-wrapper .message-sending-panel .message-form .attach a,
+    .messages .sp-wrapper .message-sending-panel .message-form .media a,
+    .messages .sp-wrapper .message-sending-panel .message-form .smiles a {
+        color: #b5b5b5;
+    }
+
+    .messages .sp-wrapper .message-sending-panel .message-form .attach a:hover,
+    .messages .sp-wrapper .message-sending-panel .message-form .media a:hover,
+    .messages .sp-wrapper .message-sending-panel .message-form .smiles a:hover {
+        color: #a3a3a3;
+    }
+
+    .messages .sp-wrapper .message-sending-panel .message-form .smiles a {
+        padding: 0 3px;
+    }
+
+    .messages .sp-wrapper .message-sending-panel .message-form button[type=submit] {
+        color: #499dd9;
+        border: 0;
+        background: none;
+        float: right;
+        padding: 0;
+        margin-top: 17px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .messages .sp-wrapper .message-sending-panel .message-form button[type=submit]:hover {
+        color: #3589c5;
+    }
+
+}
+
+@media print{
+    .header{
+        display:none;
+    }
+    .container .left{
+        display:none;
+    }
+    .container .messages .history ul{
+        list-style:none;
+    }
+    .container .messages .history ul li{
+        margin:10px 0;
+    }
+    .container .messages .history .message .userpic{
+        display:none;
+    }
+    .container .messages .history .message .time{
+        display:inline;
+        font-size: 10px;
+    }
+    .container .messages .history .message .short{
+        display:inline;
+    }
+    .container .messages .sp-wrapper{
+        display:none;
+    }
+    .container .messages .message-sending-panel-mob{
+        display:none;
+    }
+}
