@@ -1,40 +1,50 @@
 @import "fonts-colors.styl"
+tablet = 'min-width:641px'
 
 html
   height:100%
+
 body
   background: bg-color
   font-family: font
   margin: 0
-  height: calc(100% - 23px)
-  padding-bottom: 23px
+  height: 100%
+  @media screen and ({tablet})
+    height: calc(100% - 23px)
+
 a
   text-decoration:none
+
 .clearfix
   clear:both
+
 .header
-  width:1010px
+  width: 100%
+  @media screen and ({tablet})
+    width:1010px
+    position:relative
+    margin:0 auto
   background: main-blue
   font-size: 14px
   line-height: 16px
-  margin:0 auto
+  position: absolute
+  z-index: 1
   a
     color: white;
     &:hover
       background: main-blue-hover
       color: white
-.left
-  width:313px
-.right
-  width:697px
+
 .logo
-  float:left
-  vertical-align: top
-  a
+  display:none
+  @media screen and ({tablet})
     display:block
-    padding: 20px 25px
-.rest
-  float:left
+    float:left
+    vertical-align: top
+    a
+      display:block
+      padding: 20px 25px
+
 .menu-icon
 .search-icon
   float:right
@@ -42,6 +52,17 @@ a
     color: white
     display: block
     padding: 20px 25px
+
+.contact-icon
+  float:right
+  @media screen and ({tablet})
+    display:none
+  a
+    display: block
+    padding: 8px
+    img
+      width:36px
+      border-radius:50%
 .title
   overflow:hidden
   a
@@ -50,84 +71,102 @@ a
     span.lastseen
       font-size:12px
       color:lastseen
+  a.back
+    float: left
+    padding: 20px 10px
+    @media screen and ({tablet})
+      display:none
+
 .container
-  width:1010px
+  width: 100%
   background: white
-  margin:0 auto
-  border: 1px solid border-color
   height: calc(100% - 56px)
+  position: absolute
+  top: 56px
+  @media screen and ({tablet})
+    width:1010px
+    position: relative
+    top:0
+    margin:0 auto
+    border: 1px solid border-color
+
 .contacts
-  border-right:1px solid border-color
-  height:100%
-  position:relative
-  float:left
-  .list
-    height: calc(100% - 60px)
-    overflow-y: scroll
-    &::-webkit-scrollbar-track
-      background-color: scrollbar-track
-      margin-right: 10px
-      border-radius: 2px
-    &::-webkit-scrollbar
-      width: 2px
-    &::-webkit-scrollbar-thumb
-      background: scrollbar-thumb
-  .searchbox
-    padding: 12px
-    input[type=search]
-      -webkit-appearance: none
-    .searchinput
-      font-size: 12px
-      border:1px solid searchinput-color
-      border-radius:2px
-      padding:10px 20px
-      background:searchinput-color
-      width:100%
-      outline-width:0
-      &:active
-      &:focus
-        background:white
-  ul
-    list-style:none
-    margin:0
-    padding:0
-    a
-      display:block
-      padding: 7px 16px
-      &:hover
-        background: contact-hover
-      .time
-        float:right
-        color:time-color
-        font-size:11px
-      .userpic
-        float:left
-        margin-right:15px
-        img
-          width:48px
-          height:48px
-          border-radius:50%
-      .short
-        font-size:13px
-        overflow:hidden
-        .name
-          font-weight:bold
-          margin:3px 0
-          color: contact-name
-        .message
-          white-space: nowrap
-          overflow: hidden
-          text-overflow: ellipsis
-          margin-top:5px
-          color:contact-message
+  display:none
+  @media screen and ({tablet})
+    display:block
+    border-right:1px solid border-color
+    height:100%
+    position:relative
+    float:left
+    .list
+      height: calc(100% - 60px)
+      overflow-y: scroll
+      &::-webkit-scrollbar-track
+        background-color: scrollbar-track
+        margin-right: 10px
+        border-radius: 2px
+      &::-webkit-scrollbar
+        width: 2px
+      &::-webkit-scrollbar-thumb
+        background: scrollbar-thumb
+    .searchbox
+      padding: 12px
+      input[type=search]
+        -webkit-appearance: none
+      .searchinput
+        font-size: 12px
+        border:1px solid searchinput-color
+        border-radius:2px
+        padding:10px 20px
+        background:searchinput-color
+        width:100%
+        outline-width:0
+        &:active
+        &:focus
+          background:white
+    ul
+      list-style:none
+      margin:0
+      padding:0
+      a
+        display:block
+        padding: 7px 16px
+        &:hover
+          background: contact-hover
+        .time
+          float:right
+          color:time-color
+          font-size:11px
+        .userpic
+          float:left
+          margin-right:15px
+          img
+            width:48px
+            height:48px
+            border-radius:50%
+        .short
+          font-size:13px
+          overflow:hidden
+          .name
+            font-weight:bold
+            margin:3px 0
+            color: contact-name
+          .message
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+            margin-top:5px
+            color:contact-message
 .messages
   float:right
-  width:696px
+  width: 100%
   height:100%
   position:relative
   .history
     position: absolute
-    bottom: 179px
+    bottom: 54px
+    @media screen and ({tablet})
+      bottom: 179px
     top: 0
     overflow-y: scroll
     ul
@@ -146,10 +185,15 @@ a
       padding:10px
       cursor:pointer
       .message
-        width: 530px
         padding: 0 15px
         margin: 0 auto
         display:block
+        @media screen and ({tablet})
+          width:530px
+        .userpic
+          display:none
+          @media screen and ({tablet})
+            display:block
         img
           width:42px
           height:42px
@@ -176,60 +220,104 @@ a
         .userpic
           float:left
           margin-right:15px
-
+  .message-sending-panel-mob
+    @media screen and ({tablet})
+      display:none
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    .attach
+      float: left
+      margin: 15px
+      color: #b5b5b5
+    .send
+      float: right
+      color: #499dd9
+      border: 0
+      background: none
+      font-weight: bold
+      margin: 15px
+      cursor: pointer
+    .ta-wrapper
+      overflow: hidden
+      padding: 5px
+      input
+        width: 100%
+        -webkit-appearance: none
+        font-size: 12px
+        border: 1px solid #f2f2f2
+        border-radius: 2px
+        padding: 10px 20px
+        background: #f2f2f2
+        outline-width: 0
   .sp-wrapper
-    position:absolute
-    bottom:0
-    .message-sending-panel
-      width: 554px
-      margin: 0 auto
-      padding: 10px 15px
-      padding-bottom: 21px
-      bottom:0
-      .sender-photo
-        float:left
-      .receiver-photo
-        float:right
-        img,
-        ../ .sender-photo img
-          border-radius:50%
-          width:52px
-          height:52px
-      .message-form
-        width: 382px
-        left: 70px
-        right: 72px
+    display:none
+    @media screen and ({tablet})
+      display:block
+      position: absolute
+      bottom: 0
+      left:0
+      right:0
+      .message-sending-panel
+        width: 554px
         margin: 0 auto
-        textarea
-          border: 0
-          outline: none
-          height: 52px
-          resize: none
-          width: 100%
-          border-bottom: 1px solid textarea-border
-          font-family: font
-          &:focus
-            border-bottom: 2px solid textarea-border-hover
-            height:51px
-        .attach,
-        .media,
-        .smiles
-          float: left
-          margin: 15px
-          a
-            color: icons
+        padding: 10px 15px
+        padding-bottom: 21px
+        bottom:0
+        background:white
+        .sender-photo
+          float:left
+        .receiver-photo
+          float:right
+          img,
+          ../ .sender-photo img
+            border-radius:50%
+            width:52px
+            height:52px
+        .message-form
+          width: 382px
+          left: 70px
+          right: 72px
+          margin: 0 auto
+          textarea
+            border: 0
+            outline: none
+            height: 52px
+            resize: none
+            width: 100%
+            border-bottom: 1px solid textarea-border
+            font-family: font
+            &:focus
+              border-bottom: 2px solid textarea-border-hover
+              height:51px
+          .attach,
+          .media,
+          .smiles
+            float: left
+            margin: 15px
+            a
+              color: icons
+              &:hover
+                color:icons-hover
+          .smiles a
+            padding:0 3px
+          button[type=submit]
+            color: send
+            border: 0
+            background: none
+            float: right
+            padding: 0
+            margin-top: 17px
+            font-weight: bold
+            cursor: pointer
             &:hover
-              color:icons-hover
-        .smiles a
-          padding:0 3px
-        button[type=submit]
-          color: send
-          border: 0
-          background: none
-          float: right
-          padding: 0
-          margin-top: 17px
-          font-weight: bold
-          cursor: pointer
-          &:hover
-            color: send-hover
+              color: send-hover
+
+@media screen and ({tablet})
+  .left
+    width:313px
+  .right
+    width:696px
+  .rest
+    float:left
