@@ -1,5 +1,6 @@
 @import "fonts-colors.styl"
 tablet = 'min-width:641px'
+desktop = 'min-width:1025px'
 
 html
   height:100%
@@ -20,7 +21,7 @@ a
 
 .header
   width: 100%
-  @media screen and ({tablet})
+  @media screen and ({desktop})
     width:1010px
     position:relative
     margin:0 auto
@@ -37,7 +38,7 @@ a
 
 .logo
   display:none
-  @media screen and ({tablet})
+  @media screen and ({desktop})
     display:block
     float:left
     vertical-align: top
@@ -83,7 +84,7 @@ a
   height: calc(100% - 56px)
   position: absolute
   top: 56px
-  @media screen and ({tablet})
+  @media screen and ({desktop})
     width:1010px
     position: relative
     top:0
@@ -92,7 +93,7 @@ a
 
 .contacts
   display:none
-  @media screen and ({tablet})
+  @media screen and ({desktop})
     display:block
     border-right:1px solid border-color
     height:100%
@@ -165,9 +166,11 @@ a
   .history
     position: absolute
     bottom: 54px
-    @media screen and ({tablet})
+    @media screen and ({desktop})
       bottom: 179px
     top: 0
+    left: 0
+    right:0
     overflow-y: scroll
     ul
       list-style:none;
@@ -188,7 +191,7 @@ a
         padding: 0 15px
         margin: 0 auto
         display:block
-        @media screen and ({tablet})
+        @media screen and ({desktop})
           width:530px
         .userpic
           display:none
@@ -314,7 +317,7 @@ a
             &:hover
               color: send-hover
 
-@media screen and ({tablet})
+@media screen and ({desktop})
   .left
     width:313px
   .right
